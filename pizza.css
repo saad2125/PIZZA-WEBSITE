@@ -1,0 +1,201 @@
+.a:hover{
+    color: orange;
+}
+
+.main-btn{
+    display: inline-block;
+    padding: 4px ;
+    margin-top: 10px;
+    /* line-height: 3px ; */
+    background-color: orange;
+    border: 2px solid ;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 15px ;
+    box-shadow: 0px 2px 10px -1px rgb(0 0 0 /19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+.main-btn:hover {
+    background-color: transparent;
+    color: orange;
+}
+.nav-link:hover{
+    color: orange;
+}
+
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.navigation-wrap .nav-item{
+    padding: 7px ;
+    transition: all 0.3s linear;
+    
+}
+
+.navbar-toggler:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.nav-link{
+    font-size: ;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+    letter-spacing: 1px;
+}
+.nav-link:hover,
+.nav-link.active{
+    color: orange !important;
+}
+.navigation-wrap .main-btn{
+    padding: 5px;
+    box-shadow: none;
+    margin-left: 20px;
+}
+.top-banner{
+    /* width: 100%; */
+    background: url('IMAGES/banner2.avif') no-repeat center;
+    background-size: cover;
+    padding: 16.875rem 0 9.375rem;
+}
+.top-banner p{
+    color: white;
+}
+
+
+h1{
+    font-size: 58px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 10px 0 6px black;
+}
+
+h1 span{
+    color: orange;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: ;
+    color: green;
+    line-height: 3rem;
+}
+h4{
+    color: green;
+    text-transform: capitalize;
+    font-size: 1.125rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+h5{
+    color: black;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+p{
+    font-size: 1rem;
+    color: gray;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 991px) {
+
+    .text-content{
+        width: 100%;
+    }
+    .navigation-wrap .navbar-brand img{
+        height: 3.8125rem;
+    }
+    .navigation-wrap{
+        text-align: center;
+        background-color: white;
+    }
+    .navigation-wrap .nav-link{
+        line-height: 1.875rem;
+        color: black;
+    }
+    .top-banner{
+        padding: 9.375rem 0 9.375rem;
+    }
+}
+
+@media (max-width: 767px ) {
+    h1{
+        font-size: 2.8rem;
+    }
+    h2{
+        font-size: 1.3rem;
+        line-height: 28px;
+    }
+    .top-banner{
+        padding: 10.375rem 0 9.375rem;
+    }
+}
+
+.aa:hover{
+    color: orange;
+  
+}
+
+.our-menu{
+    border: none;
+}
+.our-menu .link_category_product{
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+.our-menu .link_category_product::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px dotted green;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%) scale(0);
+    background: orange;
+    -webkit-transition: all .4s ease;
+    -moz-transition:  all .4s ease;
+      -o-transition: all .4s ease;
+      transition: all .4s ease;
+}
+.card:hover .link_category_product::before{
+transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+.our-menu .cat-title a{
+    text-align: center;
+    font-size: 0.8125rem;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.card:hover  .cat-title a{
+    color: orange;
+}
